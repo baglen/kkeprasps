@@ -9,6 +9,6 @@
       Title="Menu">
 
     <Grid>
-        <TextBlock Text="ШПАК ЛОХ" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="салам ворам" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
     </Grid>
 </Page>
