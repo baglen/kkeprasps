@@ -23,7 +23,7 @@ namespace MyKKEP
                 string password = TxtPassword.Password;
                 try
                 {
-                    string response = Request.PostLogin("https://my.kkep.ru/api.php?", login, password);
+                    string response = Request.PostLogin(login, password);
                     JObject jObject = JObject.Parse(response);
                     Token = jObject["ses_token"].ToString();
                 }

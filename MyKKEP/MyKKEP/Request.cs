@@ -7,9 +7,9 @@ namespace MyKKEP
 {
     class Request
     {
-        public static string PostLogin(string Url, string login, string password)
+        public static string PostLogin(string login, string password)
         {
-            System.Net.WebRequest req = System.Net.WebRequest.Create(Url);
+            System.Net.WebRequest req = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             req.Method = "POST";//тип запроса
            // req.Timeout = 100000;
             req.ContentType = "application/x-www-form-urlencoded";
