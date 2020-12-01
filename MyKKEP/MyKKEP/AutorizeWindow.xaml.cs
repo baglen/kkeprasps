@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using System;
+using Newtonsoft.Json.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -20,6 +21,14 @@ namespace MyKKEP
                 JObject jObject = JObject.Parse(response);
                 Token = jObject["ses_token"].ToString();
                 MessageBox.Show("Вы успешно авторизованы");
+
+                //artem
+                string group = TxtGroup.Text;
+                string week = TxtWeek.Text;
+                string responseShedule = Request.PostLogin(Token, group, week);
+                JObject jSheduleObj = JObject.Parse(responseShedule);
+                MessageBox.Show(Convert.ToString(jSheduleObj));
+
                 Manager.MainFrame.Navigate(new Menu());
         }
     }

@@ -21,5 +21,8 @@
         <TextBlock Text="Пароль" FontSize="20" Grid.Row="2" HorizontalAlignment="Center" Margin="5"></TextBlock>
         <PasswordBox x:Name="TxtPassword" Width="250" Height="30" Grid.Row="2"></PasswordBox>
         <Button Content="Войти" Name="BtnLogin" Click="BtnLogin_Click" Grid.Row="3" VerticalAlignment="Top"></Button>
+        <TextBox x:Name="TxtGroup" Width="250" Height="30" Grid.Row="1" Margin="633,46,67,47"/>
+        <TextBox x:Name="TxtWeek" Width="250" Height="30" Grid.Row="2" Margin="633,46,67,46"/>
+        <Button Content="Войти" x:Name="BtnShedule" Click="BtnLogin_Click" Grid.Row="3" VerticalAlignment="Top" Margin="675,0,100,0"/>
     </Grid>
 </Page>
