@@ -10,6 +10,8 @@ namespace MyKKEP
     class Manager
     {
          //бабулдыга
+         //данил
+
         public static Frame MainFrame { get; set; }
     }
 }
