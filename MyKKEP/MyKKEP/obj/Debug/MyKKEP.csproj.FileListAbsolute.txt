@@ -41,3 +41,28 @@ D:\project\VisualStudio\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
 D:\project\VisualStudio\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.CopyComplete
 D:\project\VisualStudio\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 D:\project\VisualStudio\MyKKEP\MyKKEP\obj\Debug\Menu.baml
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\MyKKEP.exe.config
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\MyKKEP.exe
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\MyKKEP.pdb
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\Newtonsoft.Json.dll
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\RestSharp.dll
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\Newtonsoft.Json.xml
+D:\vs project\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.g.cs
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\App.g.cs
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\App.baml
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\Menu.baml
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.g.resources
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.Properties.Resources.resources
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.GenerateResource.cache
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.CoreCompileInputs.cache
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.CopyComplete
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.exe
+D:\vs project\MyKKEP\MyKKEP\obj\Debug\MyKKEP.pdb

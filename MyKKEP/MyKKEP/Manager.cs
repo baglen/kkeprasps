@@ -9,6 +9,7 @@ namespace MyKKEP
 {
     class Manager
     {
+         //бабулдыга
         public static Frame MainFrame { get; set; }
     }
 }
