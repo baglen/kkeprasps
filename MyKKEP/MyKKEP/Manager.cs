@@ -9,9 +9,8 @@ namespace MyKKEP
 {
     class Manager
     {
-         //бабулдыга
-         //данил
-
+        //бабулдыга
+        //chpak
         public static Frame MainFrame { get; set; }
     }
 }
