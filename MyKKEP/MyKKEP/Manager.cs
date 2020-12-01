@@ -11,6 +11,7 @@ namespace MyKKEP
     {
         //бабулдыга
         //chpak
+        //данил
         public static Frame MainFrame { get; set; }
     }
 }
