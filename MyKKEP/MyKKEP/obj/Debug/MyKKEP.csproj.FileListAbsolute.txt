@@ -141,3 +141,5 @@ G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.CoreCompileInputs.cache
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.CopyComplete
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.exe
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.pdb
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Rasp.g.cs
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Rasp.baml

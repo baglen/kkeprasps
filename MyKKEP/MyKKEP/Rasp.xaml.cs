@@ -16,17 +16,13 @@ using System.Windows.Shapes;
 namespace MyKKEP
 {
     /// <summary>
-    /// Логика взаимодействия для Menu.xaml
+    /// Логика взаимодействия для Rasp.xaml
     /// </summary>
-    public partial class Menu : Page
+    public partial class Rasp : Page
     {
-        private static string Token;
-        public Menu(string token)
+        public Rasp()
         {
-            Token = token;
             InitializeComponent();
-            MenuFrame.Navigate(new Rasp());
-            Manager.MainFrame = MenuFrame;
         }
     }
 }
