@@ -13,7 +13,7 @@ namespace MyKKEP
             InitializeComponent();
             if (Token != null)
             {
-                Manager.MainFrame.Navigate(new Menu());
+                Manager.MainFrame.Navigate(new Menu(Token));
             }
         }
 
@@ -38,7 +38,7 @@ namespace MyKKEP
                 else
                 {
                     MessageBox.Show("Вы успешно авторизованы");
-                    Manager.MainFrame.Navigate(new Menu());
+                    Manager.MainFrame.Navigate(new Menu(Token));
                 }
         }
     }
