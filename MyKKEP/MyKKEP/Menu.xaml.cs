@@ -20,8 +20,10 @@ namespace MyKKEP
     /// </summary>
     public partial class Menu : Page
     {
-        public Menu()
+        private static string Token;
+        public Menu(string token)
         {
+            Token = token;
             InitializeComponent();
         }
     }
