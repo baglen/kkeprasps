@@ -28,5 +28,25 @@ namespace MyKKEP
             MenuFrame.Navigate(new Rasp());
             Manager.MainFrame = MenuFrame;
         }
+
+        private void BtnSupport_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Support());
+        }
+
+        private void BtnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Settings());
+        }
+
+        private void BtnMessage_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Message());
+        }
+
+        private void BtnStudRasp_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Rasp());
+        }
     }
 }
