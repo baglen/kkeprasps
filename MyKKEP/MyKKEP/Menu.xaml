@@ -10,12 +10,8 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"  >
-                
-            </ColumnDefinition>
-            <ColumnDefinition Width="*"  >
-
-            </ColumnDefinition>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Frame Name="MenuFrame" NavigationUIVisibility="Hidden" Grid.Column="1">
         </Frame>
