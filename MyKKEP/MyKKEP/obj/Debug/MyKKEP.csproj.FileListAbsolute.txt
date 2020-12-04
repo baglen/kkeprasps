@@ -80,6 +80,7 @@ C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
+C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\App.baml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Menu.baml
@@ -104,7 +105,6 @@ D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
-D:\repos\MyKKEP\MyKKEP\obj\Debug\App.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.baml
@@ -147,12 +147,11 @@ G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Message.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Settings.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Support.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Message.g.cs
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Rasp.g.cs
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Settings.g.cs
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Message.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Rasp.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Settings.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Support.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\App.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Message.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Rasp.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Settings.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Message.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Rasp.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Settings.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Support.baml

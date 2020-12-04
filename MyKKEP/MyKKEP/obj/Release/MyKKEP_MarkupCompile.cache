@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-G:\MyKKEP\MyKKEP\MyKKEP\obj\Release\
+D:\repos\MyKKEP\MyKKEP\obj\Release\
 MyKKEP
 none
 false
 TRACE
-G:\MyKKEP\MyKKEP\MyKKEP\App.xaml
-3331050333
+D:\repos\MyKKEP\MyKKEP\App.xaml
+7749801743
 
-9182062491
-18-655467315
-AutorizeWindow.xaml;MainWindow.xaml;Menu.xaml;
+13-2085216137
+181964336373
+AutorizeWindow.xaml;MainWindow.xaml;Menu.xaml;Message.xaml;Rasp.xaml;Settings.xaml;Support.xaml;
 
 True
 

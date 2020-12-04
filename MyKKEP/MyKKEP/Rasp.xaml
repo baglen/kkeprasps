@@ -8,7 +8,12 @@
       d:DesignHeight="490" d:DesignWidth="800"
       Title="Rasp">
 
-    <Grid>
-        <TextBlock Text="AAA"></TextBlock>
+
+    <Grid Background="Lavender">
+        <DataGrid x:Name="phonesGrid" AutoGenerateColumns="True" ItemsSource="{DynamicResource ResourceKey=phones}">
+            <DataGrid.Resources>
+                
+            </DataGrid.Resources>
+        </DataGrid>
     </Grid>
 </Page>
