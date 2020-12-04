@@ -2,11 +2,15 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Collections.Generic;
+using System.Threading;
 
 namespace MyKKEP
 {
+
     public partial class AutorizeWindow : Page
     {
+        static EventWaitHandle handle = new AutoResetEvent(false);
         private static string Token=null;
         public AutorizeWindow()
         {
@@ -26,6 +30,7 @@ namespace MyKKEP
                     string response = Request.PostLogin(login, password);
                     JObject jObject = JObject.Parse(response);
                     Token = jObject["ses_token"].ToString();
+                    handle.WaitOne();
                 }
                 catch (Exception ex)
                 {
@@ -37,6 +42,9 @@ namespace MyKKEP
                 }
                 else
                 {
+                    //jObject.Sleep(3000);
+                    //Сигналим о завершении
+                    handle.Set();
                     MessageBox.Show("Вы успешно авторизованы");
                     Manager.MainFrame.Navigate(new Menu(Token));
                 }
