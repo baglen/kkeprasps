@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MyKKEP"
+    "\\MyKKEP",
+    "\\MyKKEP\\MyKKEP"
   ],
-  "SelectedNode": "\\MyKKEP\\MyKKEP\\Manager.cs",
+  "SelectedNode": "\\MyKKEP\\MyKKEP\\AutorizeWindow.xaml.cs",
   "PreviewInSolutionExplorer": false
 }
