@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\project\VisualStudio\MyKKEP\MyKKEP\obj\Debug\
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\
 MyKKEP
 none
 false
 DEBUG;TRACE
-D:\project\VisualStudio\MyKKEP\MyKKEP\App.xaml
-3331050333
+G:\MyKKEP\MyKKEP\MyKKEP\App.xaml
+7749801743
 
-10-660296876
-18395261123
-AutorizeWindow.xaml;MainWindow.xaml;Menu.xaml;
+141367391792
+18-655467315
+AutorizeWindow.xaml;MainWindow.xaml;Menu.xaml;Message.xaml;Rasp.xaml;Settings.xaml;Support.xaml;
 
-False
+True
 
