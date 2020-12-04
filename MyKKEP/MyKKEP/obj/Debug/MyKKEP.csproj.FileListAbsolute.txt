@@ -105,7 +105,6 @@ D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
-D:\repos\MyKKEP\MyKKEP\obj\Debug\App.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.baml
@@ -148,3 +147,11 @@ G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Message.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Settings.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Support.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Message.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Rasp.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Settings.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Message.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Rasp.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Settings.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Support.baml
