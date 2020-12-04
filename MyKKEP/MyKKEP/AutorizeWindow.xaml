@@ -20,6 +20,6 @@
         <TextBox x:Name="TxtLogin" Width="250" Height="30" Grid.Row="1"></TextBox>
         <TextBlock Text="Пароль" FontSize="20" Grid.Row="2" HorizontalAlignment="Center" Margin="5"></TextBlock>
         <PasswordBox x:Name="TxtPassword" Width="250" Height="30" Grid.Row="2"></PasswordBox>
-        <Button Content="Войти" Name="BtnLogin" Click="BtnLogin_Click" Grid.Row="3" VerticalAlignment="Top"></Button>
+        <Button Content="Войти" Name="BtnLogin" Click="BtnLogin_Click" Grid.Row="3" VerticalAlignment="Top" Width="175" Height="30"></Button>
     </Grid>
 </Page>

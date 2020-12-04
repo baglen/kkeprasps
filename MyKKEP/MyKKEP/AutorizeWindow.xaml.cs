@@ -30,7 +30,7 @@ namespace MyKKEP
                     string response = Request.PostLogin(login, password);
                     JObject jObject = JObject.Parse(response);
                     Token = jObject["ses_token"].ToString();
-                    handle.WaitOne();
+                    //handle.WaitOne();
                 }
                 catch (Exception ex)
                 {
@@ -44,7 +44,7 @@ namespace MyKKEP
                 {
                     //jObject.Sleep(3000);
                     //Сигналим о завершении
-                    handle.Set();
+                    //handle.Set();
                     MessageBox.Show("Вы успешно авторизованы");
                     Manager.MainFrame.Navigate(new Menu(Token));
                 }
