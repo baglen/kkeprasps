@@ -165,3 +165,6 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Message.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Rasp.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Settings.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Support.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\App.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Dark.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Light.baml
