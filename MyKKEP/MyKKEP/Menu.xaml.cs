@@ -21,13 +21,17 @@ namespace MyKKEP
     public partial class Menu : Page
     {
         private static string Token;
-        private string NameUser;
-        private string SurnameUser;
-        public Menu(string token, string name, string surname)
+        private static string NameUser;
+        private static string SurnameUser;
+        private static string GroupName;
+        private static int GroupNum;
+        public Menu(string token, string name, string surname, int groupNum, string groupName)
         {
             Token = token;
             NameUser = name;
             SurnameUser = surname;
+            GroupName = groupName;
+            GroupNum = groupNum;
             InitializeComponent();
             MenuFrame.Navigate(new Rasp());
             Manager.MainFrame = MenuFrame;
