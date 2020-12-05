@@ -24,15 +24,15 @@ namespace MyKKEP
         public Settings()
         {
             InitializeComponent();
-            List<string> styles = new List<string> { "light", "dark" };
-
-            //styleBox.SelectionChanged += ThemeChange;
-            //styleBox.ItemsSource = styles;
-           // styleBox.SelectedItem = "dark";
         }
-     /*   private void ThemeChange(object sender, SelectionChangedEventArgs e)
+
+        private void TglBtnTheme_Click(object sender, RoutedEventArgs e)
         {
-            string style = styleBox.SelectedItem as string;
+            string style;
+            if (TglBtnTheme.IsChecked == true)
+                style = "Light";
+            else
+                style = "Dark";
             // определяем путь к файлу ресурсов
             var uri = new Uri(style + ".xaml", UriKind.Relative);
             // загружаем словарь ресурсов
@@ -41,7 +41,6 @@ namespace MyKKEP
             Application.Current.Resources.Clear();
             // добавляем загруженный словарь ресурсов
             Application.Current.Resources.MergedDictionaries.Add(resourceDict);
-        }*/
-
+        }
     }
 }
