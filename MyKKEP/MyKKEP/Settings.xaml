@@ -10,7 +10,7 @@
 
     <Grid>
         <ToggleButton Content="Тема" Style="{StaticResource ToggleButtonStyle1}" HorizontalAlignment="Center" Height="30" 
-         VerticalAlignment="Top" Margin="10"/>
-        
+         VerticalAlignment="Top" Margin="10" Name="TglBtnTheme" Click="TglBtnTheme_Click" IsChecked="True"/>
+
     </Grid>
 </Page>
