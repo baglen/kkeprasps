@@ -14,12 +14,14 @@ namespace MyKKEP
         private static string Token=null;
         private static string SurnameUser;
         private static string NameUser;
+        private static string GroupName;
+        private static int GroupNum=0;
         public AutorizeWindow()
         {
             InitializeComponent();
             if (Token != null)
             {
-                Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser));
+                Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser, GroupNum, GroupName));
             }
         }
 
@@ -35,7 +37,14 @@ namespace MyKKEP
                     JObject jObjectUser = JObject.Parse(jObject["user"].ToString());
                     NameUser = jObjectUser["first_name"].ToString();
                     SurnameUser= jObjectUser["last_name"].ToString();
-            }
+                    string accessName= jObjectUser["access_name"].ToString(); // имя роли
+                    if (accessName == "Студенты")
+                    {
+                    JObject jObjectGroup = JObject.Parse(jObjectUser["group"].ToString());
+                    GroupNum = Convert.ToInt32(jObjectGroup["group_num"].ToString());
+                    GroupName = jObjectGroup["name"].ToString();
+                    }
+                }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Ошибка в отправке данных на сервер " + ex.ToString());
@@ -47,7 +56,7 @@ namespace MyKKEP
                 else
                 {
                     MessageBox.Show("Вы успешно авторизованы");
-                    Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser));
+                    Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser, GroupNum, GroupName));
                 }
         }
     }
