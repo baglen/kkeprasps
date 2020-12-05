@@ -20,9 +20,17 @@ namespace MyKKEP
     /// </summary>
     public partial class Support : Page
     {
-        public Support()
+        private string NameUser;
+        private string SurnameUser;
+        public Support(string name, string surname)
         {
             InitializeComponent();
+            if (name != null && surname != null)
+            {
+                NameUser = name;
+                SurnameUser = surname;
+            }
+            TEST.Text = NameUser + " " + SurnameUser;
         }
     }
 }

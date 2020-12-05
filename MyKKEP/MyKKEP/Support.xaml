@@ -9,6 +9,6 @@
       Title="Support">
 
     <Grid>
-        <TextBlock Text="sup"></TextBlock>
+        <TextBox x:Name="TEST" Width="275" Height="30"></TextBox>
     </Grid>
 </Page>
