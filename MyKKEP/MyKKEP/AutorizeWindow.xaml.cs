@@ -35,7 +35,7 @@ namespace MyKKEP
                     JObject jObjectUser = JObject.Parse(jObject["user"].ToString());
                     NameUser = jObjectUser["first_name"].ToString();
                     SurnameUser= jObjectUser["last_name"].ToString();
-            }
+                }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Ошибка в отправке данных на сервер " + ex.ToString());
