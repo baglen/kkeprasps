@@ -21,9 +21,13 @@ namespace MyKKEP
     public partial class Menu : Page
     {
         private static string Token;
-        public Menu(string token)
+        private string NameUser;
+        private string SurnameUser;
+        public Menu(string token, string name, string surname)
         {
             Token = token;
+            NameUser = name;
+            SurnameUser = surname;
             InitializeComponent();
             MenuFrame.Navigate(new Rasp());
             Manager.MainFrame = MenuFrame;
@@ -31,7 +35,7 @@ namespace MyKKEP
 
         private void BtnSupport_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Support());
+            Manager.MainFrame.Navigate(new Support(NameUser, SurnameUser));
         }
 
         private void BtnSettings_Click(object sender, RoutedEventArgs e)
