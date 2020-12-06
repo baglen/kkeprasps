@@ -33,7 +33,7 @@ namespace MyKKEP
             GroupName = groupName;
             GroupNum = groupNum;
             InitializeComponent();
-            MenuFrame.Navigate(new Rasp());
+            MenuFrame.Navigate(new Rasp(Token, GroupName));
             Manager.MainFrame = MenuFrame;
         }
 
@@ -54,7 +54,7 @@ namespace MyKKEP
 
         private void BtnStudRasp_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Rasp());
+            Manager.MainFrame.Navigate(new Rasp(Token, GroupName));
         }
     }
 }
