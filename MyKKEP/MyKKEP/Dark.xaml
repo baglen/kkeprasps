@@ -5,7 +5,7 @@
         <Setter Property="Background" Value="Gray" />
         <Setter Property="Foreground" Value="White" />
     </Style>
-    <Style x:Key="WindowStyle" TargetType="Window">
+    <Style x:Key="PageStyle" TargetType="Page">
         <Setter Property="Background" Value="Gray" />
     </Style>
     <Style x:Key="ButtonStyle" TargetType="Button">
