@@ -6,11 +6,10 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="700"
-      Title="Settings">
+      Title="Settings" Style="{DynamicResource PageStyle}">
 
     <Grid>
-        <ToggleButton Content="Тема" Style="{StaticResource ToggleButtonStyle1}" HorizontalAlignment="Center" Height="30" 
-         VerticalAlignment="Top" Margin="10"/>
-        
+        <ToggleButton Content="Тема" HorizontalAlignment="Center" Height="30" 
+         VerticalAlignment="Top" Margin="10" Name="TglBtnTheme" Click="TglBtnTheme_Click" IsChecked="True" />
     </Grid>
 </Page>
