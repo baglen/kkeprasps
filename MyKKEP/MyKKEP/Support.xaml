@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Support">
+      Title="Support" Style="{DynamicResource PageStyle}">
 
     <Grid>
         <TextBox x:Name="TEST" Width="275" Height="30"></TextBox>
