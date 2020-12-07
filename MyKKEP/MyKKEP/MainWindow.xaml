@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <Grid Background="#333" ></Grid>
         <Grid Background="#333"  Grid.Row="2"></Grid>
-        <TextBlock Text="My KKEP" Foreground="White" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="My KKEP" Foreground="White" FontSize="30" HorizontalAlignment="Left" Margin="20" VerticalAlignment="Center"></TextBlock>
         <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
     </Grid>
 </Window>
