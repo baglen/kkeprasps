@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
-      Title="Rasp" Width="700" Height="490" Style="{DynamicResource PageStyle}">
+      Title="Rasp" Width="700" Height="600" Style="{DynamicResource PageStyle}">
     <Grid>
         <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="675" Margin="5,0,0,0">
             <Grid Background="White" HorizontalAlignment="Left" Height="60" Width="230" Margin="0,-30,0,0">
