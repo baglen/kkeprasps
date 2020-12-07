@@ -32,13 +32,33 @@ namespace MyKKEP
             {
                 ComboBoxGroups.SelectedItem = GroupName;
             }
-            string response = Request.GetGroupList(Token);
-            JArray jArray = JArray.Parse(response);
+            string responseGroup = Request.GetGroupList(Token);
+            JArray jArray = JArray.Parse(responseGroup);
             for (int i = 0; i < jArray.Count; i++)
             {
                 JObject jObject = JObject.Parse(jArray[i].ToString());
                 ComboBoxGroups.Items.Add(jObject["group_name"].ToString());
             }
+
+            ComboBoxTeachers.SelectedIndex = 0;
+            string responseTeacher = Request.GetTeacherList(Token);
+            JArray jTeachers = JArray.Parse(responseTeacher);
+            for (int i = 0; i < jTeachers.Count; i++)
+            {
+                ComboBoxTeachers.Items.Add(jTeachers[i].ToString());
+            }
+        }
+
+        private void BtnTeacherShedule_Click(object sender, RoutedEventArgs e)
+        {
+            ComboBoxGroups.Visibility = Visibility.Hidden;
+            ComboBoxTeachers.Visibility = Visibility.Visible;
+        }
+
+        private void BtnGroupShedule_Click(object sender, RoutedEventArgs e)
+        {
+            ComboBoxTeachers.Visibility = Visibility.Hidden;
+            ComboBoxGroups.Visibility = Visibility.Visible;
         }
     }
 }
