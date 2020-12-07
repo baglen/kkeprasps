@@ -5,27 +5,27 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
-      Title="Rasp" Width="700" Height="490">
+      Title="Rasp" Width="685" Height="490">
 
 
     <Grid Background="Gray">
-        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="690" Margin="5,0,0,0">
-            <Grid Background="White" HorizontalAlignment="Left" Height="60" Width="230" Margin="0,-30,0,0">
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="680" Margin="5,0,0,0">
+            <StackPanel Background="White" HorizontalAlignment="Left" Height="60" Width="230" Margin="0,-30,0,0">
                 <Button Width="115" HorizontalAlignment="Left" Content="Преподаватели" Height="60" VerticalAlignment="Bottom" BorderThickness="0"/>
-                <Button Width="115" HorizontalAlignment="Right" Content="Группа" Height="60" VerticalAlignment="Bottom" BorderThickness="0"/>
-            </Grid>
-            <Grid Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,0,0">
-                <TextBox Text="Группа" IsHitTestVisible="False"/>
-                <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxGroups"/>
-                <TextBox Text="Неделя" VerticalAlignment="Bottom" Margin="1,0,0,2" BorderThickness="0" IsHitTestVisible="False"/>
-                <Button Width="75" Height="30" VerticalAlignment="Bottom" Margin="5,0,0,0" Content="Первая" BorderThickness="0"/>
-                <Button Width="75" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Вторая" BorderThickness="0"/>
-            </Grid>
-            <Grid Background="White" HorizontalAlignment="Center" Height="60" Width="80" Margin="0,-30,0,0">
+                <Button Width="115" HorizontalAlignment="Right" Content="Группа" Height="60" VerticalAlignment="Bottom" BorderThickness="0" Margin="0,-60,0,0"/>
+            </StackPanel>
+            <StackPanel Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,5,0" >
+                <TextBox Text="Группа" IsHitTestVisible="False" BorderThickness="0" Width="40" HorizontalAlignment="Left" />
+                <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxGroups" BorderThickness="0" Margin="0,-16,0,0" VerticalContentAlignment="Center"/>
+                <TextBox Text="Неделя" VerticalAlignment="Bottom" Margin="1,0,0,2" BorderThickness="0" IsHitTestVisible="False" Width="45" HorizontalAlignment="Left"/>
+                <Button Width="75" Height="30" VerticalAlignment="Bottom" Margin="5,-18,0,0" Content="Первая" BorderThickness="0"/>
+                <Button Width="75" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Вторая" BorderThickness="0" Margin="0,-30,0,0"/>
+            </StackPanel>
+            <StackPanel Background="White" HorizontalAlignment="Center" Height="60" Width="80" Margin="0,-30,0,0">
                 <TextBox Text="Замены" VerticalAlignment="Top" Margin="1,0,0,2" BorderThickness="0" IsHitTestVisible="False" HorizontalAlignment="Center"/>
-                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Left" Content="Да" BorderThickness="0"/>
-                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0"/>
-            </Grid>
+                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Left" Content="Да" BorderThickness="0" Margin="0,2,0,0"/>
+                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0" Margin="0,-40,0,0"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </Page>
