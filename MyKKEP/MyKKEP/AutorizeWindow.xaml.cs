@@ -20,7 +20,7 @@ namespace MyKKEP
             InitializeComponent();
             if (Token != null)
             {
-                Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser, GroupNum, GroupName));
+               // Manager.MainFrame.Navigate(new MainWindow(Token, NameUser, SurnameUser, GroupNum, GroupName));
             }
         }
 
@@ -55,8 +55,14 @@ namespace MyKKEP
                 else
                 {
                     MessageBox.Show("Вы успешно авторизованы");
-                    Manager.MainFrame.Navigate(new Menu(Token, NameUser, SurnameUser, GroupNum, GroupName));
+                    Manager.MainFrame.Navigate(new Rasp(Token, GroupName));
+                    MainWindow.Token = Token;
+                    MainWindow.SurnameUser = SurnameUser;
+                    MainWindow.NameUser = NameUser;
+                    MainWindow.GroupName = GroupName;
+                    MainWindow.GroupNum = GroupNum;
                 }
+            
         }
     }
 }

@@ -93,9 +93,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Menu.xaml.cs">
-      <DependentUpon>Menu.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Rasp.xaml.cs">
       <DependentUpon>Rasp.xaml</DependentUpon>
     </Compile>
@@ -107,10 +104,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Message.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

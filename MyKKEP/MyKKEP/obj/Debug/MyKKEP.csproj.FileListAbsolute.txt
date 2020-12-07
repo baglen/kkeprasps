@@ -75,15 +75,11 @@ C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\bin\Debug\Newtonsoft.Json.xm
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.g.cs
-C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
-C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\App.baml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
-C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
-C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Menu.baml
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP.g.resources
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP.Properties.Resources.resources
 C:\Users\zhura\Source\Repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.GenerateResource.cache
@@ -168,3 +164,5 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Support.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\App.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Dark.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Light.baml
+C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
+C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml

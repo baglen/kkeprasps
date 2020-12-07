@@ -7,14 +7,56 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="950">
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="30"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid Background="#333" Name="GridTop" Width="950" HorizontalAlignment="Left" ></Grid>
-        <Grid Background="#333"  Grid.Row="2"></Grid>
-        <TextBlock Text="My KKEP" Foreground="White" FontSize="30" HorizontalAlignment="Left" Margin="20" VerticalAlignment="Center"></TextBlock>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1"></Frame>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="SelectBar" Width="250">
+            </ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Frame Name="MenuFrame" NavigationUIVisibility="Hidden" ContentRendered="MenuFrame_ContentRendered" Grid.Column="1">
+        </Frame>
+        <Grid Background="#333">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="35">
+                </RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="35">
+                </RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="35">
+                </RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="35">
+                </RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="2" Background="#3D3D3D"  Name="BtnStudRasp"  Foreground="White" Click="BtnStudRasp_Click"  >
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="Resources/StudRasp.png" Margin="0,0,65,0" />
+                    <TextBlock Text="Расписание" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="4" Background="#3D3D3D"  Name="BtnMessage"  Foreground="White" Click="BtnMessage_Click"  >
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="Resources/Messaging.png" Margin="0,0,65,0" />
+                    <TextBlock Text="Сообщения" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="6" Background="#3D3D3D"  Name="BtnSettings"  Foreground="White" Click="BtnSettings_Click"  >
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="Resources/Settings.png" Margin="0,0,65,0" />
+                    <TextBlock Text="Настройки" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="8" Background="#3D3D3D"  Name="BtnSupport"  Foreground="White" Click="BtnSupport_Click"  >
+                <StackPanel Orientation="Horizontal" Width="250">
+                    <Image Source="Resources/Support.png" Margin="0,0,65,0" />
+                    <TextBlock Text="Поддержка" VerticalAlignment="Center" />
+                </StackPanel>
+            </Button>
+            <TextBlock Text="My KKEP" Grid.Row="0" FontSize="30" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        </Grid>
     </Grid>
 </Window>
