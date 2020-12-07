@@ -12,10 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Net;
+using System.IO;
+using System.Net.Mail;
+
 
 namespace MyKKEP
 {
     /// <summary>
+    /// login my.kkep.app@gmail.com
+    /// pass putin5551
     /// Логика взаимодействия для Support.xaml
     /// </summary>
     public partial class Support : Page
@@ -29,8 +35,18 @@ namespace MyKKEP
             {
                 NameUser = name;
                 SurnameUser = surname;
-            }
-            TEST.Text = NameUser + " " + SurnameUser;
+                string to = "my.kkep.app@gmail.com";
+                string from = "my.kkep.app@gmail.com";
+                MailMessage message = new MailMessage(from, to);
+                message.Subject = NameUser+" "+SurnameUser;
+                message.Body = @"111";
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.UseDefaultCredentials = true;
+                client.Credentials = new NetworkCredential("my.kkep.app", "putin5551");
+                client.EnableSsl = true;
+                client.Send(message);
+            } 
         }
+        
     }
 }

@@ -119,13 +119,11 @@ G:\MyKKEP\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
-G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
-G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Menu.baml
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.g.resources
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.Properties.Resources.resources
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.GenerateResource.cache
@@ -164,3 +162,6 @@ D:\repos\MyKKEP\MyKKEP\obj\Debug\Dark.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Light.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\App.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Dark.baml
+G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Light.baml
