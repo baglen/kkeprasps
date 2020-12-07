@@ -28,18 +28,25 @@ namespace MyKKEP
     {
         private string NameUser;
         private string SurnameUser;
-        private static string GroupName;
-        public Support(string name, string surname, string groupName)
+        public Support(string name, string surname)
         {
             InitializeComponent();
             if (name != null && surname != null)
             {
                 NameUser = name;
                 SurnameUser = surname;
-                GroupName = groupName;
-            }
-            TEST.Text = NameUser + " " + SurnameUser;
-
+                string to = "my.kkep.app@gmail.com";
+                string from = "my.kkep.app@gmail.com";
+                MailMessage message = new MailMessage(from, to);
+                message.Subject = NameUser+" "+SurnameUser;
+                message.Body = @"111";
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                client.UseDefaultCredentials = true;
+                client.Credentials = new NetworkCredential("my.kkep.app", "putin5551");
+                client.EnableSsl = true;
+                client.Send(message);
+            } 
         }
+        
     }
 }
