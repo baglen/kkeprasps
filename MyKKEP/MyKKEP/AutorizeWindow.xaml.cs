@@ -10,7 +10,6 @@ namespace MyKKEP
 
     public partial class AutorizeWindow : Page
     {
-        static EventWaitHandle handle = new AutoResetEvent(false);
         private static string Token=null;
         private static string SurnameUser;
         private static string NameUser;

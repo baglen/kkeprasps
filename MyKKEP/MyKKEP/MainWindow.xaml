@@ -12,9 +12,9 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid Background="#333" ></Grid>
+        <Grid Background="#333" Name="GridTop" Width="950" HorizontalAlignment="Left" ></Grid>
         <Grid Background="#333"  Grid.Row="2"></Grid>
         <TextBlock Text="My KKEP" Foreground="White" FontSize="30" HorizontalAlignment="Left" Margin="20" VerticalAlignment="Center"></TextBlock>
-        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Row="1"></Frame>
+        <Frame Name="MainFrame" NavigationUIVisibility="Hidden" ContentRendered="MainFrame_ContentRendered" Grid.Row="1"></Frame>
     </Grid>
 </Window>

@@ -23,5 +23,13 @@ namespace MyKKEP
             MainFrame.Navigate(new AutorizeWindow());
             Manager.MainFrame = MainFrame; 
         }
+
+        private void MainFrame_ContentRendered(object sender, EventArgs e)
+        {
+            if (MainFrame.CanGoBack)
+            {
+                GridTop.Width = 250;
+            }
+        }
     }
 }
