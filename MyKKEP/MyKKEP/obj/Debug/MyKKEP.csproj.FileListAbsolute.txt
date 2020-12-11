@@ -97,13 +97,11 @@ D:\repos\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
 D:\repos\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
-D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\App.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.cache
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP_MarkupCompile.lref
 D:\repos\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MainWindow.baml
-D:\repos\MyKKEP\MyKKEP\obj\Debug\Menu.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.g.resources
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.Properties.Resources.resources
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csproj.GenerateResource.cache

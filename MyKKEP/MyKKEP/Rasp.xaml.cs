@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 
 namespace MyKKEP
 {
@@ -23,9 +25,18 @@ namespace MyKKEP
     {
         private static string Token;
         private static string GroupName;
+        private ObservableCollection<Days> Сollection { get; set; }
+        public static void BindingDays()
+        {
+            //string responseShedule = Request.GroupShedule(Token, GroupName, 1);
+            //JArray jArray = JArray.Parse(responseShedule);
+            
+        }
+        
         public Rasp(string token, string groupName)
         {
             InitializeComponent();
+            
             Token = token;
             GroupName = groupName;
             if (GroupName != null)
@@ -47,7 +58,13 @@ namespace MyKKEP
             {
                 ComboBoxTeachers.Items.Add(jTeachers[i].ToString());
             }
+            //List<Array> Collection = new List<Array>();
+            //string[] Array1 = new string[4] { "1", "2", "3", "4" };
+            
+            //Collection.Add(new Array[2] {[1, 1] });
+            //sheduleGrid.ItemsSource = Array1;
         }
+    
 
         private void BtnTeacherShedule_Click(object sender, RoutedEventArgs e)
         {

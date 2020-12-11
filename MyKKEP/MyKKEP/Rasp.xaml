@@ -7,15 +7,15 @@
       mc:Ignorable="d" 
       Title="Rasp" Width="700" Height="600" Style="{DynamicResource PageStyle}">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="675" Margin="5,0,0,0">
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="700" Margin="5,0">
             <Grid Background="White" HorizontalAlignment="Left" Height="60" Width="230" Margin="0,-30,0,0">
                 <Button Width="115" HorizontalAlignment="Left" Content="Преподаватели" Height="60" VerticalAlignment="Bottom" BorderThickness="0" x:Name="BtnTeacherShedule" Click="BtnTeacherShedule_Click"/>
                 <Button Width="115" HorizontalAlignment="Right" Content="Группа" Height="60" VerticalAlignment="Bottom" BorderThickness="0" x:Name="BtnGroupShedule" Click="BtnGroupShedule_Click" />
             </Grid>
-            <Grid Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,0,0">
-                <TextBox Text="Группа" IsHitTestVisible="False"/>
-                <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxGroups" BorderThickness="0" VerticalContentAlignment="Center"/>
+            <Grid Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,10,0">
+                <TextBox Text="Группа" IsHitTestVisible="False" BorderThickness="0"/>
                 <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxTeachers" BorderThickness="0" VerticalContentAlignment="Center"/>
+                <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxGroups" BorderThickness="0" VerticalContentAlignment="Center"/>
                 <TextBox Text="Неделя" VerticalAlignment="Bottom" Margin="1,0,0,2" BorderThickness="0" IsHitTestVisible="False"/>
                 <Button Width="75" Height="30" VerticalAlignment="Bottom" Margin="5,0,0,0" Content="Первая" BorderThickness="0"/>
                 <Button Width="75" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Content="Вторая" BorderThickness="0"/>
@@ -26,5 +26,20 @@
                 <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0"/>
             </Grid>
         </Grid>
+        <Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,100,0,0">
+
+                <DataGrid x:Name="sheduleGrid" AutoGenerateColumns="True" VerticalAlignment="Top" Width="700">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="№" Width="30" Binding="{Binding Array1[0]}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Дисциплина" Width="225" Binding="{Binding Array1[1]}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Преподаватель" Width="225" Binding="{Binding Array1[2]}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Аудитория" Width="220" Binding="{Binding Array1[3]}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </Grid>
+
     </Grid>
+
 </Page>
