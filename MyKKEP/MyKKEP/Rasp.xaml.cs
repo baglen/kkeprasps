@@ -25,18 +25,17 @@ namespace MyKKEP
     {
         private static string Token;
         private static string GroupName;
-        private ObservableCollection<Days> Сollection { get; set; }
         public static void BindingDays()
         {
             //string responseShedule = Request.GroupShedule(Token, GroupName, 1);
             //JArray jArray = JArray.Parse(responseShedule);
             
         }
-        
+
         public Rasp(string token, string groupName)
         {
             InitializeComponent();
-            
+
             Token = token;
             GroupName = groupName;
             if (GroupName != null)
@@ -58,11 +57,35 @@ namespace MyKKEP
             {
                 ComboBoxTeachers.Items.Add(jTeachers[i].ToString());
             }
-            //List<Array> Collection = new List<Array>();
-            //string[] Array1 = new string[4] { "1", "2", "3", "4" };
-            
-            //Collection.Add(new Array[2] {[1, 1] });
-            //sheduleGrid.ItemsSource = Array1;
+            string responseGroupShedule = Request.GroupShedule(Token, "632", 2);
+            JArray jAnswer = JArray.Parse(responseGroupShedule);
+            List<Days> list1 = new List<Days>();
+            try
+            {
+                for (int i = 0; i < jAnswer.Count; i++)
+                {
+                    JObject j123 = JObject.Parse(jAnswer[i].ToString());
+                    JArray jPairs = JArray.Parse(j123["pairs"].ToString());
+                    for (int j = 0; j < jPairs.Count; j++)
+                    {
+                        JObject jobj = JObject.Parse(jPairs[j].ToString());
+                        Days monday = new Days();
+                        if(jobj["isnull"].ToString() != "1") 
+                        {
+                            monday.pairNum = jobj["p_num"].ToString();
+                            monday.pairSubject = jobj["p_subj"].ToString();
+                            monday.pairAud = jobj["p_aud"].ToString();
+                            monday.pairTeacher = jobj["p_prep"].ToString();
+                        }
+                        list1.Add(monday);
+                    }
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+            sheduleGrid.ItemsSource = list1;
         }
     
 

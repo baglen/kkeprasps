@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
       Title="Rasp" Width="700" Height="600" Style="{DynamicResource PageStyle}">
-    <Grid>
-        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="700" Margin="5,0">
+    <Grid Width="685" HorizontalAlignment="Left">
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="685" >
             <Grid Background="White" HorizontalAlignment="Left" Height="60" Width="230" Margin="0,-30,0,0">
                 <Button Width="115" HorizontalAlignment="Left" Content="Преподаватели" Height="60" VerticalAlignment="Bottom" BorderThickness="0" x:Name="BtnTeacherShedule" Click="BtnTeacherShedule_Click"/>
                 <Button Width="115" HorizontalAlignment="Right" Content="Группа" Height="60" VerticalAlignment="Bottom" BorderThickness="0" x:Name="BtnGroupShedule" Click="BtnGroupShedule_Click" />
             </Grid>
-            <Grid Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,10,0">
+            <Grid Background="White" HorizontalAlignment="Right" Height="60" Width="230" Margin="0,-30,0,0">
                 <TextBox Text="Группа" IsHitTestVisible="False" BorderThickness="0"/>
                 <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxTeachers" BorderThickness="0" VerticalContentAlignment="Center"/>
                 <ComboBox HorizontalAlignment="Right" Width="150"  Height="30" VerticalAlignment="Top" x:Name="ComboBoxGroups" BorderThickness="0" VerticalContentAlignment="Center"/>
@@ -26,18 +26,65 @@
                 <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0"/>
             </Grid>
         </Grid>
-        <Grid>
-            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Margin="0,100,0,0">
 
-                <DataGrid x:Name="sheduleGrid" AutoGenerateColumns="True" VerticalAlignment="Top" Width="700">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="№" Width="30" Binding="{Binding Array1[0]}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Дисциплина" Width="225" Binding="{Binding Array1[1]}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Преподаватель" Width="225" Binding="{Binding Array1[2]}"></DataGridTextColumn>
-                        <DataGridTextColumn Header="Аудитория" Width="220" Binding="{Binding Array1[3]}"></DataGridTextColumn>
-                    </DataGrid.Columns>
-                </DataGrid>
-            </ScrollViewer>
+        <Grid  Width="685">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="76*"/>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="515*"/>
+            </Grid.RowDefinitions>
+            <DataGrid x:Name="sheduleGrid" AutoGenerateColumns="False" VerticalAlignment="Top" ItemsSource="{Binding}" IsReadOnly="True" Margin="-10,80,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="№" Width="30" Binding="{Binding pairNum}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Дисциплина" Width="*" Binding="{Binding pairSubject}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Преподаватель" Width="200" Binding="{Binding pairTeacher}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="HorizontalAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        <DataGridTextColumn.HeaderStyle>
+                            <Style TargetType="DataGridColumnHeader">
+                                <Setter Property="HorizontalContentAlignment" Value="Center" />
+                            </Style>
+                        </DataGridTextColumn.HeaderStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
         </Grid>
 
     </Grid>
