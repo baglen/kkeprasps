@@ -34,7 +34,7 @@
         <Button Grid.Row="3" Grid.Column="2" Background="#3D3D3D"  Name="Send"  Foreground="White" Margin="0,5,0,5" Click="Send_Click" >
             <Image Source="Resources/Send.png" Width="60" Height="60"/>
         </Button>
-        <Button Grid.Row="3" Grid.Column="1" Background="#3D3D3D"  Name="Attachment"  Foreground="White" Width="85" Margin="0,5,0,5" >
+        <Button Grid.Row="3" Grid.Column="1" Background="#3D3D3D"  Name="Attachment"  Foreground="White" Width="85" Margin="0,5,0,5" Click="Attachment_Click" >
             <Image Source="Resources/Attach.png" Width="60" Height="60"/>
         </Button>
     </Grid>

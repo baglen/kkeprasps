@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using System.Net;
 using System.IO;
 using System.Net.Mail;
+using Microsoft.Win32;
 
 namespace MyKKEP
 {
@@ -23,13 +24,14 @@ namespace MyKKEP
     ///  /// <summary>
     /// login my.kkep.app@gmail.com
     /// pass putin5551
-    /// Логика взаимодействия для Support.xaml
     /// </summary>
     /// </summary>
     public partial class Letter : Page
     {
         private string NameUser;
         private string SurnameUser;
+        private OpenFileDialog Attachment1;
+        
         public Letter(string name, string surname)
         {
             InitializeComponent();
@@ -40,21 +42,29 @@ namespace MyKKEP
 
         private void Send_Click(object sender, RoutedEventArgs e)
         {
-
+            
             if (NameUser != null && SurnameUser != null)
             {
                 string to = "rapira7779@gmail.com";
                 string from = "my.kkep.app@gmail.com";
-                MailMessage message = new MailMessage(from, to);
-                message.Subject = NameUser + " " + SurnameUser + " " + Caption.Text;
-                message.Body = Text.Text;
+                MailMessage UserMessage = new MailMessage(from, to);
+                UserMessage.Subject = NameUser + " " + SurnameUser + " " + Caption.Text;
+                UserMessage.Body = Text.Text;
                 //message.Attachments.Add(new Attachment("D://temlog.txt"));
                 SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
                 client.UseDefaultCredentials = true;
                 client.Credentials = new NetworkCredential("my.kkep.app", "putin5551");
                 client.EnableSsl = true;
-                client.Send(message);
+                client.Send(UserMessage);
             }
+        }
+
+        private void Attachment_Click(object sender, RoutedEventArgs e,OpenFileDialog Attachment1)
+        {
+            OpenFileDialog attachment = Attachment1;
+            attachment.Multiselect = true;
+            attachment.Filter = "Pictures|(*.png;*.jpg;*.gif)|All files|*.*";
+           // m.Attachments.Add(new Attachment(Attachment));
         }
     }
 }
