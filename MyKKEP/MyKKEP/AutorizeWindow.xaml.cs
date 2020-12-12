@@ -26,6 +26,8 @@ namespace MyKKEP
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
+                TxtLogin.Text = "zhuravko"; 
+                TxtPassword.Password = "999035";
                 string login = TxtLogin.Text;
                 string password = TxtPassword.Password;
                 try
