@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Days.cs" />
+    <Compile Include="Letter.xaml.cs">
+      <DependentUpon>Letter.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Message.xaml.cs">
       <DependentUpon>Message.xaml</DependentUpon>
     </Compile>
@@ -78,6 +82,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Dark.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Letter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -160,6 +168,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\StudRasp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Letter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Send.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Attach.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

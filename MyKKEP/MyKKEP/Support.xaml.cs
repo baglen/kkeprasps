@@ -19,27 +19,22 @@ using System.Net.Mail;
 
 namespace MyKKEP
 {
-    /// <summary>
-    /// login my.kkep.app@gmail.com
-    /// pass putin5551
-    /// Логика взаимодействия для Support.xaml
-    /// </summary>
+   
     public partial class Support : Page
     {
         private string NameUser;
         private string SurnameUser;
-        private static string GroupName;
-        public Support(string name, string surname, string groupName)
+
+        public Support(string name, string surname)
         {
             InitializeComponent();
-            if (name != null && surname != null)
-            {
-                NameUser = name;
-                SurnameUser = surname;
-                GroupName = groupName;
-            }
-            TEST.Text = NameUser + " " + SurnameUser;
+            NameUser = name;
+            SurnameUser = surname;
+        }
 
+        private void Option3_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new Letter(NameUser,SurnameUser));
         }
     }
 }

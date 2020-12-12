@@ -34,7 +34,7 @@ namespace MyKKEP
             return Out;
         }
         //artem
-        public static string GroupShedule(string token, int group, int week)
+        public static string GroupShedule(string token, string group, int week)
         {
             System.Net.WebRequest reqShedule = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             reqShedule.Method = "POST";//тип запроса
