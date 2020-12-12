@@ -56,7 +56,7 @@ namespace MyKKEP
                 }
                 else
                 {
-                    MessageBox.Show("Вы успешно авторизованы");
+                    //MessageBox.Show("Вы успешно авторизованы");
                     Manager.MainFrame.Navigate(new Rasp(Token, GroupName));
                     MainWindow.Token = Token;
                     MainWindow.SurnameUser = SurnameUser;

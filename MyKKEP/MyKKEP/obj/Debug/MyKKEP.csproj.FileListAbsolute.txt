@@ -169,3 +169,5 @@ G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 G:\MyKKEP\MyKKEP\MyKKEP\obj\Debug\Letter.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
+D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.baml
