@@ -26,6 +26,8 @@ namespace MyKKEP
 
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
+                TxtLogin.Text = "zhuravko"; 
+                TxtPassword.Password = "999035";
                 string login = TxtLogin.Text;
                 string password = TxtPassword.Password;
                 try
@@ -54,7 +56,7 @@ namespace MyKKEP
                 }
                 else
                 {
-                    MessageBox.Show("Вы успешно авторизованы");
+                    //MessageBox.Show("Вы успешно авторизованы");
                     Manager.MainFrame.Navigate(new Rasp(Token, GroupName));
                     MainWindow.Token = Token;
                     MainWindow.SurnameUser = SurnameUser;
