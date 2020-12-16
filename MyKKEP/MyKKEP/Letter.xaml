@@ -10,13 +10,14 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.2*">
+            <RowDefinition Height="62*">
             </RowDefinition>
-            <RowDefinition Height="0.25*">
+            <RowDefinition Height="77*">
             </RowDefinition>
-            <RowDefinition Height="0.75*">
+            <RowDefinition Height="209*">
             </RowDefinition>
-            <RowDefinition Height="0.25*">
+            <RowDefinition Height="24*"/>
+            <RowDefinition Height="78*">
             </RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -26,16 +27,17 @@
             <ColumnDefinition Width="1.5*"/>
             <ColumnDefinition Width="0.25*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1" Background="#3D3D3D" HorizontalAlignment="Center" VerticalAlignment="Center" Width="450" Height="40">
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Grid.Column="1" Background="#3D3D3D" VerticalAlignment="Center" Height="40" Width="450">
             <TextBlock FontSize="15" TextAlignment="Center" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"  Text="Опишите свою проблему, и при желании, приложите файл"/>
         </Grid>
         <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Name="Caption" FontSize="15" FontWeight="Black"  Margin="105,15,105,15" Style="{StaticResource PlaceholderTextBoxStyle}" Tag="Заголовок" />
-        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Name="Text" FontSize="12" FontWeight="Bold" SpellCheck.IsEnabled="True" Language="ru-ru" Style="{StaticResource PlaceholderTextBoxStyleBig}" Tag="Введите текст сюда"/>
-        <Button Grid.Row="3" Grid.Column="2" Background="#3D3D3D"  Name="Send"  Foreground="White" Margin="0,5,0,5" Click="Send_Click" >
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Name="Text" FontSize="12" FontWeight="Bold" SpellCheck.IsEnabled="True" Language="ru-ru" Style="{StaticResource PlaceholderTextBoxStyleBig}" Tag="Введите текст сюда" Grid.RowSpan="2"/>
+        <Button Grid.Row="4" Grid.Column="3" Background="#3D3D3D"  Name="Send"  Foreground="White"  Click="Send_Click" Width="80" Height="68" Margin="75,5,101,5" >
             <Image Source="Resources/Send.png" Width="60" Height="60"/>
         </Button>
-        <Button Grid.Row="3" Grid.Column="1" Background="#3D3D3D"  Name="Attachment"  Foreground="White" Width="85" Margin="0,5,0,5" Click="Attachment_Click" >
+        <Button Grid.Row="4" Grid.Column="1" Background="#3D3D3D"  Name="Attachment"  Foreground="White"  Width="80" Height="68" Click="Attachment_Click" Margin="101,5,75,5" >
             <Image Source="Resources/Attach.png" Width="60" Height="60"/>
         </Button>
+        <Image Grid.Row="4" Grid.Column="1" Name="AttachmentViewer" Height="70" Width="200" Stretch="Fill" Grid.ColumnSpan="3"  />
     </Grid>
 </Page>

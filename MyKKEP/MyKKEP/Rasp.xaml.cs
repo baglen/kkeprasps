@@ -52,6 +52,11 @@ namespace MyKKEP
             {
                 ComboBoxTeachers.Items.Add(jTeachers[i].ToString());
             }
+            GroupSheduleSet();
+            
+        }
+        private void GroupSheduleSet()
+        {
             string responseGroupShedule = Request.GroupShedule(Token, GroupName, WeekSetting);
             JArray jAnswer = JArray.Parse(responseGroupShedule);
             List<Days> listSheduleMonday = new List<Days>();
@@ -72,9 +77,14 @@ namespace MyKKEP
                         {
                             Days monday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString()=="1")
+                            {
+                                sheduleGridMonday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
+                            
                             if (jobj["isnull"].ToString() != "1")
                             {
-                                
+
                                 monday.pairNum = jobj["p_num"].ToString();
                                 monday.pairSubject = jobj["p_subj"].ToString();
                                 monday.pairAud = jobj["p_aud"].ToString();
@@ -92,7 +102,7 @@ namespace MyKKEP
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message.ToString());
             }
@@ -108,6 +118,10 @@ namespace MyKKEP
                         {
                             Days tuesday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString() == "1")
+                            {
+                                sheduleGridTuesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -144,6 +158,10 @@ namespace MyKKEP
                         {
                             Days wednesday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString() == "1")
+                            {
+                                sheduleGridWednesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -180,6 +198,10 @@ namespace MyKKEP
                         {
                             Days thursday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString() == "1")
+                            {
+                                sheduleGridThursday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -216,6 +238,10 @@ namespace MyKKEP
                         {
                             Days friday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString() == "1")
+                            {
+                                sheduleGridFriday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -252,6 +278,10 @@ namespace MyKKEP
                         {
                             Days saturday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
+                            if (jobj["ischange"].ToString() == "1")
+                            {
+                                sheduleGridSaturday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                            }
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -283,28 +313,37 @@ namespace MyKKEP
             sheduleGridFriday.ItemsSource = listSheduleFriday;
             sheduleGridSaturday.ItemsSource = listSheduleSaturday;
         }
-    
 
         private void BtnTeacherShedule_Click(object sender, RoutedEventArgs e)
         {
             ComboBoxGroups.Visibility = Visibility.Hidden;
             ComboBoxTeachers.Visibility = Visibility.Visible;
+
         }
 
         private void BtnGroupShedule_Click(object sender, RoutedEventArgs e)
         {
             ComboBoxTeachers.Visibility = Visibility.Hidden;
             ComboBoxGroups.Visibility = Visibility.Visible;
+            GroupSheduleSet();
         }
 
         private void FirstWeek_Click(object sender, RoutedEventArgs e)
         {
             WeekSetting = 1;
+            GroupSheduleSet();
         }
 
         private void SecondWeek_Click(object sender, RoutedEventArgs e)
         {
             WeekSetting = 2;
+            GroupSheduleSet();
+        }
+
+        private void ComboBoxGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            GroupName = ComboBoxGroups.SelectedItem.ToString();
+            GroupSheduleSet();
         }
     }
 }

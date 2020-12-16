@@ -36,5 +36,10 @@ namespace MyKKEP
         {
             Manager.MainFrame.Navigate(new Letter(NameUser,SurnameUser));
         }
+
+        private void Option1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
