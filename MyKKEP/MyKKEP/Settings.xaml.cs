@@ -28,7 +28,7 @@ namespace MyKKEP
 
         private void TglBtnTheme_Click(object sender, RoutedEventArgs e)
         {
-            string style;
+           /* string style;
             if (TglBtnTheme.IsChecked == true)
                 style = "Light.xaml";
             else
@@ -41,7 +41,7 @@ namespace MyKKEP
             Application.Current.Resources.Clear();
             // добавляем загруженный словарь ресурсов
             Application.Current.Resources.MergedDictionaries.Add(resourceDict);
-            
+            */
         }
     }
 }
