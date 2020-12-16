@@ -94,7 +94,6 @@ D:\repos\MyKKEP\MyKKEP\bin\Debug\Newtonsoft.Json.dll
 D:\repos\MyKKEP\MyKKEP\bin\Debug\RestSharp.dll
 D:\repos\MyKKEP\MyKKEP\bin\Debug\Newtonsoft.Json.xml
 D:\repos\MyKKEP\MyKKEP\bin\Debug\RestSharp.xml
-D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
 D:\repos\MyKKEP\MyKKEP\obj\Debug\AutorizeWindow.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MainWindow.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\App.g.cs
@@ -171,3 +170,4 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
