@@ -1,0 +1,16 @@
+﻿<Page x:Class="MyKKEP.Switch"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyKKEP"
+      mc:Ignorable="d" 
+    Height="50" Width="100" Background="Transparent" >
+    <Border x:Name="BtnSwitch" CornerRadius="25" BorderBrush="Black" BorderThickness="1">
+        <Grid>
+            <Border Name="BtnFalse" CornerRadius="25" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Left" Background="Black"></Border>
+            <Border x:Name="BtnTrue" CornerRadius="25" BorderBrush="Black" BorderThickness="1" Width="50" HorizontalAlignment="Right" Background="Black"></Border>
+            
+        </Grid>
+    </Border>
+</Page>
