@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d"
       d:DesignHeight="700" d:DesignWidth="600"
-      Title="Support" Style="{DynamicResource PageStyle}">
+      Title="Support">
         <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition >
