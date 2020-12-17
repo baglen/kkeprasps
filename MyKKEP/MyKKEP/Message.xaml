@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Message" Style="{DynamicResource PageStyle}">
+      Title="Message">
 
     <Grid>
         <TextBlock Text="mes"></TextBlock>

@@ -73,6 +73,16 @@ namespace MyKKEP.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Exit {
+            get {
+                object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Group {
             get {
                 object obj = ResourceManager.GetObject("Group", resourceCulture);
@@ -106,6 +116,16 @@ namespace MyKKEP.Properties {
         internal static System.Drawing.Bitmap Messaging {
             get {
                 object obj = ResourceManager.GetObject("Messaging", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Notice {
+            get {
+                object obj = ResourceManager.GetObject("Notice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
