@@ -82,8 +82,8 @@
             </Grid>
             <Grid Background="White" HorizontalAlignment="Center" Height="60" Width="80" Margin="0,-30,0,0">
                 <TextBox Text="Замены" VerticalAlignment="Top" Margin="1,0,0,2" BorderThickness="0" IsHitTestVisible="False" HorizontalAlignment="Center"/>
-                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Left" Content="Да" BorderThickness="0"/>
-                <Button Height="40" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0"/>
+                <Button Height="40" x:Name="addChange" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Left" Content="Да" BorderThickness="0" Click="addChange_Click"/>
+                <Button Height="40" x:Name="removeChange" VerticalAlignment="Bottom" Width="40" HorizontalAlignment="Right" Content="Нет" BorderThickness="0" Click="removeChange_Click"/>
             </Grid>
         </Grid>
         <ScrollViewer Margin="0,80,0,0">
