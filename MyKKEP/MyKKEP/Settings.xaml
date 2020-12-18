@@ -6,10 +6,47 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="700"
-      Title="Settings" Style="{DynamicResource PageStyle}">
+      Title="Settings">
 
     <Grid>
-        <ToggleButton Content="Тема" HorizontalAlignment="Center" Height="30" 
-         VerticalAlignment="Top" Margin="10" Name="TglBtnTheme" Click="TglBtnTheme_Click" IsChecked="True" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="340"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Background="#3D3D3D" x:Name="BtnNotice" Click="BtnNotice_Click" Height="50" Foreground="White">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="Resources/Notice.png" Width="50" Height="50" Margin="10,0,10,0"/>
+                        <TextBlock Text="Уведомления"  VerticalAlignment="Center" Margin="0,0,10,0" FontSize="15"/>
+                    </StackPanel>
+                </Button>
+                <StackPanel Margin="5,0,0,0">
+                    <Frame x:Name="Notice" Height="50" Width="100" NavigationUIVisibility="Hidden" />
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+        <Button x:Name="BtnDeleteCash" Click="BtnDeleteCash_Click" Grid.Column="1" Grid.Row="3" Background="#3D3D3D" Height="50" Foreground="White" Width="200">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Resources/Delete.png" Width="50" Height="50" Margin="10,0,10,0"/>
+                <TextBlock Text="Очистить кэш"  VerticalAlignment="Center" Margin="0,0,10,0" FontSize="15"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="BtnExit" Click="BtnExit_Click" Grid.Column="1" Grid.Row="5" Background="#3D3D3D" Height="50" Foreground="White" Width="200">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="Resources/Exit.png" Width="50" Height="50" Margin="0,0,20,0"/>
+                <TextBlock Text="Выйти"  VerticalAlignment="Center" Margin="0,0,40,0" FontSize="15"/>
+            </StackPanel>
+        </Button>
     </Grid>
 </Page>

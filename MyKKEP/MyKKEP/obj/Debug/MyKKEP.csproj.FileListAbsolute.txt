@@ -150,8 +150,6 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Message.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Rasp.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Settings.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Support.g.cs
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Dark.baml
-C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Light.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Message.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Rasp.baml
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Settings.baml
@@ -171,3 +169,5 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
+C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.g.cs
+C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.baml

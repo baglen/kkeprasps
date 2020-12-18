@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:MyKKEP"
       mc:Ignorable="d"
       d:DesignHeight="700" d:DesignWidth="600"
-      Title="Support" Style="{DynamicResource PageStyle}">
+      Title="Support">
         <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition >
@@ -32,7 +32,7 @@
             <RowDefinition>
             </RowDefinition>
         </Grid.RowDefinitions>
-        <Button Grid.Row="1" Grid.Column="1" Background="#3D3D3D"  Name="Option1"  Foreground="White"  >
+        <Button Grid.Row="1" Grid.Column="1" Background="#3D3D3D"  Name="Option1"  Foreground="White" Click="Option1_Click"  >
             <StackPanel Orientation="Horizontal" Width="340">
                 <Image Source="Resources/Group.png" Margin="15,0,20,0" Width="75" Height="75" />
                 <TextBlock Text="Не соответсвие расписания" VerticalAlignment="Center" FontSize="15"/>
