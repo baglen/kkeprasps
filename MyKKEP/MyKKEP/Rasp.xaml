@@ -89,7 +89,7 @@
         <ScrollViewer Margin="0,80,0,0">
             <Grid  Width="655" Height="765">
                 <TextBlock Height="19" Text="Понедельник" HorizontalAlignment="Center" VerticalAlignment="Top"  TextAlignment="Center" Margin="302,0,275,0"></TextBlock>
-                <DataGrid x:Name="sheduleGridMonday" RowHeaderWidth="0"   AutoGenerateColumns="False" VerticalAlignment="Top" ItemsSource="{Binding}" IsReadOnly="True" Margin="0,20,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False" >
+                <DataGrid x:Name="sheduleGridMonday" RowHeaderWidth="0" AutoGenerateColumns="False" VerticalAlignment="Top" ItemsSource="{Binding}" IsReadOnly="True" Margin="0,20,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False" >
                 
                 <DataGrid.Columns>
                     
@@ -142,9 +142,14 @@
                         </DataGridTextColumn.HeaderStyle>
                     </DataGridTextColumn>
                 </DataGrid.Columns>
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Background" Value="White"/>
+                        </Style>
+                    </DataGrid.RowStyle>
             </DataGrid>
                 <TextBlock Height="19" Text="Вторник" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="312,122,293,0"  TextAlignment="Center"></TextBlock>
-                <DataGrid x:Name="sheduleGridTuesday" RowHeaderWidth="0"  AutoGenerateColumns="False" VerticalAlignment="Top" ItemsSource="{Binding}" IsReadOnly="True" Margin="0,140,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False" >
+                <DataGrid x:Name="sheduleGridTuesday" RowHeaderWidth="0"  AutoGenerateColumns="False" VerticalAlignment="Top"  IsReadOnly="True" Margin="0,140,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False" >
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="№" Width="30" Binding="{Binding pairNum}" >
                         <DataGridTextColumn.ElementStyle>
@@ -195,7 +200,8 @@
                         </DataGridTextColumn.HeaderStyle>
                     </DataGridTextColumn>
                 </DataGrid.Columns>
-            </DataGrid>
+                    
+                </DataGrid>
                 <TextBlock Height="19" Text="Среда" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="312,242,293,0"  TextAlignment="Center"></TextBlock>
                 <DataGrid x:Name="sheduleGridWednesday" RowHeaderWidth="0"  AutoGenerateColumns="False" VerticalAlignment="Top" ItemsSource="{Binding}" IsReadOnly="True" Margin="0,260,0,0" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" Grid.RowSpan="3" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserResizeRows="False" >
                 <DataGrid.Columns>

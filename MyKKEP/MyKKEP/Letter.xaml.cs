@@ -39,7 +39,7 @@ namespace MyKKEP
                 MailMessage UserMessage = new MailMessage(from, to);
                 UserMessage.Subject = NameUser + " " + SurnameUser + " " + Caption.Text;
                 UserMessage.Body = Text.Text;
-                if(UserMessage.Body==null &&)
+                if(UserMessage.Body==null)
                 {
                     if (hueta != null)
                     {
