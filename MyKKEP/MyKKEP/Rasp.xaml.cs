@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
+using System.Web.UI.WebControls;
 
 namespace MyKKEP
 {
@@ -77,11 +78,7 @@ namespace MyKKEP
                         {
                             Days monday = new Days();
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
-                            if (jobj["ischange"].ToString()=="1")
-                            {
-                                sheduleGridMonday.RowBackground = new SolidColorBrush(Colors.LightBlue);
-                            }
-                            
+
                             if (jobj["isnull"].ToString() != "1")
                             {
 
@@ -89,6 +86,12 @@ namespace MyKKEP
                                 monday.pairSubject = jobj["p_subj"].ToString();
                                 monday.pairAud = jobj["p_aud"].ToString();
                                 monday.pairTeacher = jobj["p_prep"].ToString();
+                                monday.ischange = jobj["ischange"].ToString();
+                                if (monday.ischange == "1")
+                                {
+                                    MessageBox.Show("1");
+                                }
+                                
                             }
                             else
                             {
@@ -120,7 +123,7 @@ namespace MyKKEP
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
                             if (jobj["ischange"].ToString() == "1")
                             {
-                                sheduleGridTuesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                                //sheduleGridTuesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
                             }
                             if (jobj["isnull"].ToString() != "1")
                             {
@@ -129,6 +132,11 @@ namespace MyKKEP
                                 tuesday.pairSubject = jobj["p_subj"].ToString();
                                 tuesday.pairAud = jobj["p_aud"].ToString();
                                 tuesday.pairTeacher = jobj["p_prep"].ToString();
+                                tuesday.ischange = jobj["ischange"].ToString();
+                                if (tuesday.ischange == "1")
+                                {
+                                    //sheduleGridTuesday.CellStyle.Setters.Add(new Setter(DataGridCell.BackgroundProperty, Brushes.CadetBlue));
+                                }
                             }
                             else
                             {
@@ -160,7 +168,7 @@ namespace MyKKEP
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
                             if (jobj["ischange"].ToString() == "1")
                             {
-                                sheduleGridWednesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                                //sheduleGridWednesday.RowBackground = new SolidColorBrush(Colors.LightBlue);
                             }
                             if (jobj["isnull"].ToString() != "1")
                             {
@@ -200,7 +208,7 @@ namespace MyKKEP
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
                             if (jobj["ischange"].ToString() == "1")
                             {
-                                sheduleGridThursday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                                //sheduleGridThursday.RowBackground = new SolidColorBrush(Colors.LightBlue);
                             }
                             if (jobj["isnull"].ToString() != "1")
                             {
@@ -240,7 +248,7 @@ namespace MyKKEP
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
                             if (jobj["ischange"].ToString() == "1")
                             {
-                                sheduleGridFriday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                               // sheduleGridFriday.RowBackground = new SolidColorBrush(Colors.LightBlue);
                             }
                             if (jobj["isnull"].ToString() != "1")
                             {
@@ -280,7 +288,7 @@ namespace MyKKEP
                             JObject jobj = JObject.Parse(jPairs[j].ToString());
                             if (jobj["ischange"].ToString() == "1")
                             {
-                                sheduleGridSaturday.RowBackground = new SolidColorBrush(Colors.LightBlue);
+                                //sheduleGridSaturday.RowBackground = new SolidColorBrush(Colors.LightBlue);
                             }
                             if (jobj["isnull"].ToString() != "1")
                             {

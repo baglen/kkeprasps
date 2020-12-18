@@ -13,6 +13,7 @@ namespace MyKKEP
         public string pairSubject { get; set; }
         public string pairTeacher { get; set; }
         public string pairAud { get; set; }
-
+        public string ischange { get; set; }
+        public string colorSet { get; set; }
     }
 }
