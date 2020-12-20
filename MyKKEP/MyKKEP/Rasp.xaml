@@ -21,7 +21,7 @@
             <Border BorderBrush="Black" BorderThickness="1" CornerRadius="5" Margin="0,1,10,-10">
                 <Grid Background="Transparent" HorizontalAlignment="Center" Height="55" Width="440" VerticalAlignment="Top" Margin="126,4,107,0" >
                     <TextBlock x:Name="GroupTeachTxt" Text="Группа" IsHitTestVisible="False"  Height="20" Margin="122,2,164,33" />
-                    <ComboBox  Width="154"  Height="25" VerticalAlignment="Bottom" x:Name="ComboBoxTeachers"  VerticalContentAlignment="Center" Style="{StaticResource ComboboxStyle}" IsReadOnly="True" IsTextSearchEnabled="True" Margin="121,0,165,1" />
+                    <ComboBox  Width="154"  Height="25" VerticalAlignment="Bottom" x:Name="ComboBoxTeachers"  VerticalContentAlignment="Center" Style="{StaticResource ComboboxStyle}" IsReadOnly="True" IsTextSearchEnabled="True" Margin="121,0,165,1" SelectionChanged="ComboBoxTeachers_SelectionChanged" />
                     <ComboBox  Width="154"  Height="25" VerticalAlignment="Bottom" x:Name="ComboBoxGroups"  VerticalContentAlignment="Center" SelectionChanged="ComboBoxGroups_SelectionChanged" Style="{StaticResource ComboboxStyle}" IsReadOnly="True" IsTextSearchEnabled="True" Margin="121,0,165,1" />
                     <TextBlock Height="20" Text="Неделя" VerticalAlignment="Top" IsHitTestVisible="False" Width="40" Margin="285,2,115,0" />
                     <Button x:Name="FirstWeek"  Width="75" Height="25" Content="Первая" BorderThickness="0" Click="FirstWeek_Click" Style="{StaticResource RoundedButtonStyle}" Margin="285,29,80,1" />
@@ -81,7 +81,7 @@
                                         </Style>
                                     </DataGridTextColumn.HeaderStyle>
                                 </DataGridTextColumn>
-                                <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                                <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                                     <DataGridTextColumn.ElementStyle>
                                         <Style TargetType="{x:Type TextBlock}">
                                             <Setter Property="HorizontalAlignment" Value="Center" />
@@ -141,7 +141,7 @@
                                 </Style>
                             </DataGridTextColumn.HeaderStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
@@ -195,7 +195,7 @@
                                 </Style>
                             </DataGridTextColumn.HeaderStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
@@ -248,7 +248,7 @@
                                 </Style>
                             </DataGridTextColumn.HeaderStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
@@ -301,7 +301,7 @@
                                 </Style>
                             </DataGridTextColumn.HeaderStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="HorizontalAlignment" Value="Center" />
@@ -354,7 +354,7 @@
                                 </Style>
                             </DataGridTextColumn.HeaderStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Ауд." Width="60" Binding="{Binding pairAud}">
+                        <DataGridTextColumn Header="Ауд." Width="70" Binding="{Binding pairAud}">
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="HorizontalAlignment" Value="Center" />

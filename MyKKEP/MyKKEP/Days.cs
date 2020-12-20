@@ -15,5 +15,6 @@ namespace MyKKEP
         public string pairAud { get; set; }
         public string ischange { get; set; }
         public string colorSet { get; set; }
+        public string pgroup { get; set; }
     }
 }
