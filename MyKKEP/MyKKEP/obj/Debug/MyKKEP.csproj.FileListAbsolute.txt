@@ -166,7 +166,6 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Letter.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Letter.baml
-D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Switch.g.cs
