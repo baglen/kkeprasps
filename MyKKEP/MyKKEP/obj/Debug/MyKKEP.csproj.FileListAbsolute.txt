@@ -170,3 +170,4 @@ C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.g.cs
 C:\Users\zhura\source\repos\kkeprasps\MyKKEP\MyKKEP\obj\Debug\Switch.baml
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Switch.g.cs
 D:\repos\MyKKEP\MyKKEP\obj\Debug\Switch.baml
+D:\repos\MyKKEP\MyKKEP\obj\Debug\MyKKEP.csprojAssemblyReference.cache

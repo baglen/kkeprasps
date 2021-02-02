@@ -24,7 +24,7 @@
         <SolidColorBrush x:Key="Button.Checked.Background" Color="Red"/>
         <SolidColorBrush x:Key="Button.Static.Background" Color="LightBlue"/>
         <SolidColorBrush x:Key="Button.Static.Border" Color="#FF707070"/>
-        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FFBEE6FD"/>
+        <SolidColorBrush x:Key="Button.MouseOver.Background" Color="#FF9AC8E2"/>
         <SolidColorBrush x:Key="Button.MouseOver.Border" Color="#FF3C7FB1"/>
         <SolidColorBrush x:Key="Button.Pressed.Background" Color="#FFC4E5F6"/>
         <SolidColorBrush x:Key="Button.Pressed.Border" Color="#FF2C628B"/>
@@ -225,6 +225,7 @@
             </Setter>
         </Style>
         <Style x:Key="ComboboxTextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
