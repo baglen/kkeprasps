@@ -17,24 +17,14 @@ namespace MyKKEP
 {
     public partial class MainWindow : Window
     {
-        public static string Token;
         public static string NameUser;
         public static string SurnameUser;
-        public static string GroupName;
-        public static int GroupNum;
         public MainWindow()
         {
-
             InitializeComponent();
-            if (MenuFrame.CanGoBack == false)
-            {
-                BtnSupport.Visibility = Visibility.Hidden;
-                BtnSettings.Visibility = Visibility.Hidden;
-                BtnMessage.Visibility = Visibility.Hidden;
-                BtnStudRasp.Visibility = Visibility.Hidden;
-            }
-            MenuFrame.Navigate(new AutorizeWindow());
+            MenuFrame.Navigate(new Rasp());
             Manager.MainFrame = MenuFrame;
+            LabelInfo.Content += "Пользователь: " + NameUser + " " + SurnameUser + "\nГруппа: " + Manager.GroupDefault;
         }
 
         private void BtnSupport_Click(object sender, RoutedEventArgs e)
@@ -54,7 +44,7 @@ namespace MyKKEP
 
         private void BtnStudRasp_Click(object sender, RoutedEventArgs e)
         {
-            Manager.MainFrame.Navigate(new Rasp(Token, GroupName));
+            Manager.MainFrame.Navigate(new Rasp());
         }
 
         private void MenuFrame_ContentRendered(object sender, EventArgs e)

@@ -2,18 +2,19 @@
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Windows;
 
 namespace MyKKEP
 {
     class Request
     {
-        public static string PostLogin(string login, string password)
+        public static string PostLogin()
         {
             System.Net.WebRequest req = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             req.Method = "POST";//тип запроса
            // req.Timeout = 100000;
             req.ContentType = "application/x-www-form-urlencoded";
-            string sName = "method=login&login=" + login + "&password=" + password; //формирование параметров
+            string sName = "method=login&login=" + Manager.Login + "&password=" + Manager.Password; //формирование параметров
             byte[] sentData = Encoding.GetEncoding(1251).GetBytes(sName); // перевод в байтовый массив
             req.ContentLength = sentData.Length;
             System.IO.Stream sendStream = req.GetRequestStream();
@@ -34,12 +35,12 @@ namespace MyKKEP
             return Out;
         }
         //artem
-        public static string GroupShedule(string token, string group, int week)
+        public static string GroupShedule()
         {
             System.Net.WebRequest reqShedule = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             reqShedule.Method = "POST";//тип запроса
             reqShedule.ContentType = "application/x-www-form-urlencoded";
-            string sName = "method=get_stud_rasp&token=" + token + "&group=" + group + "&week=" + week; //формирование параметров
+            string sName = "method=get_stud_rasp&token=" + Manager.Token + "&group=" + Manager.GroupName + "&week=" + Manager.WeekSetting; //формирование параметров
             byte[] sentData = Encoding.GetEncoding(1251).GetBytes(sName); // перевод в байтовый массив
             reqShedule.ContentLength = sentData.Length;
             System.IO.Stream sendStream = reqShedule.GetRequestStream();
@@ -59,12 +60,12 @@ namespace MyKKEP
             }
             return Out;
         }
-        public static string GetTeacherList(string token)
+        public static string GetTeacherList()
         {
             System.Net.WebRequest reqTeacherList = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             reqTeacherList.Method = "POST";//тип запроса
             reqTeacherList.ContentType = "application/x-www-form-urlencoded";
-            string sName = "method=get_prep_list&token=" + token; //формирование параметров
+            string sName = "method=get_prep_list&token=" + Manager.Token; //формирование параметров
             byte[] sentData = Encoding.GetEncoding(1251).GetBytes(sName); // перевод в байтовый массив
             reqTeacherList.ContentLength = sentData.Length;
             System.IO.Stream sendStream = reqTeacherList.GetRequestStream();
@@ -84,12 +85,12 @@ namespace MyKKEP
             }
             return Out;
         }
-        public static string GetGroupList(string token)
+        public static string GetGroupList()
         {
             System.Net.WebRequest reqGroupList = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             reqGroupList.Method = "POST";//тип запроса
             reqGroupList.ContentType = "application/x-www-form-urlencoded";
-            string sName = "method=get_group_list&token=" + token; //формирование параметров
+            string sName = "method=get_group_list&token=" + Manager.Token; //формирование параметров
             byte[] sentData = Encoding.GetEncoding(1251).GetBytes(sName); // перевод в байтовый массив
             reqGroupList.ContentLength = sentData.Length;
             System.IO.Stream sendStream = reqGroupList.GetRequestStream();
@@ -109,12 +110,12 @@ namespace MyKKEP
             }
             return Out;
         }
-        public static string TeacherShedule(string token, int id, int week)
+        public static string TeacherShedule(int id, int week)
         {
             System.Net.WebRequest reqShedule = System.Net.WebRequest.Create("https://my.kkep.ru/api.php?");
             reqShedule.Method = "POST";//тип запроса
             reqShedule.ContentType = "application/x-www-form-urlencoded";
-            string sName = "method=get_prep_rasp&token=" + token + "&teacher=" + id + "&week=" + week; //формирование параметров
+            string sName = "method=get_prep_rasp&token=" + Manager.Token + "&teacher=" + id + "&week=" + week; //формирование параметров
             byte[] sentData = Encoding.GetEncoding(1251).GetBytes(sName); // перевод в байтовый массив
             reqShedule.ContentLength = sentData.Length;
             System.IO.Stream sendStream = reqShedule.GetRequestStream();

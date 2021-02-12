@@ -24,12 +24,7 @@ namespace MyKKEP
     /// </summary>
     public partial class Rasp : Page
     {
-        private static string Token;
-        private static string GroupName;
-        private int WeekSetting;
         private int WeekChecker;
-        private string Teacher;
-        private int TeacherUid = 0;
         Collection<Days> listSheduleMonday = new Collection<Days>();
         Collection<Days> listSheduleTuesday = new Collection<Days>();
         Collection<Days> listSheduleWednesday = new Collection<Days>();
@@ -41,7 +36,7 @@ namespace MyKKEP
 
         private Dictionary<string, int> TeacherId = new Dictionary<string, int>();
             
-        public Rasp(string token, string groupName)
+        public Rasp()
         {
             InitializeComponent();
             #region TeachersIds
@@ -148,18 +143,15 @@ namespace MyKKEP
             TeacherId.Add("Янцен В.О.", 111);
             TeacherId.Add("Ярош С.И.", 104);
             #endregion
-            Token = token;
-            GroupName = groupName;
-            
-            if (GroupName != null)
+            if (Manager.GroupName != null)
             {
-                //ComboBoxGroups.SelectedItem = GroupName;
+                ComboBoxGroups.SelectedItem = Manager.GroupName;
             }
-            if (Teacher != null)
+            if (Manager.Teacher != null)
             {
-                ComboBoxTeachers.SelectedItem = Teacher;
+                ComboBoxTeachers.SelectedItem = Manager.Teacher;
             }    
-            string responseGroup = Request.GetGroupList(Token);
+            string responseGroup = Request.GetGroupList();
             JArray jArray = JArray.Parse(responseGroup);
             for (int i = 0; i < jArray.Count; i++)
             {
@@ -167,13 +159,13 @@ namespace MyKKEP
                 groupsList.Add(jObject["group_name"].ToString());
             }
 
-            string responseTeacher = Request.GetTeacherList(Token);
+            string responseTeacher = Request.GetTeacherList();
             JArray jTeachers = JArray.Parse(responseTeacher);
             for (int i = 0; i < jTeachers.Count; i++)
             {
                 teachersList.Add(jTeachers[i].ToString());
             }
-            Teacher = teachersList[0];
+            Manager.Teacher = teachersList[0];
             ComboBoxGroups.ItemsSource = groupsList;
             ComboBoxTeachers.ItemsSource = teachersList;
             GetGroupShedule();
@@ -194,7 +186,7 @@ namespace MyKKEP
             sheduleGridFriday.ItemsSource = new Collection<string>();
             sheduleGridSaturday.ItemsSource = new Collection<string>();
 
-            string responseGroupShedule = Request.GroupShedule(Token, GroupName, WeekSetting);
+            string responseGroupShedule = Request.GroupShedule();
             JArray jAnswer = JArray.Parse(responseGroupShedule);
             #region GroupShedule
             try
@@ -447,7 +439,7 @@ namespace MyKKEP
 
         private void FirstWeek_Click(object sender, RoutedEventArgs e)
         {
-            WeekSetting = 1;
+            Manager.WeekSetting = 1;
             if(WeekChecker == 1)
             {
                 GetGroupShedule();
@@ -460,7 +452,7 @@ namespace MyKKEP
 
         private void SecondWeek_Click(object sender, RoutedEventArgs e)
         {
-            WeekSetting = 2;
+            Manager.WeekSetting = 2;
             if (WeekChecker == 1)
             {
                 GetGroupShedule();
@@ -473,8 +465,8 @@ namespace MyKKEP
 
         private void ComboBoxGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           GroupName = ComboBoxGroups.SelectedItem.ToString();
-            GetGroupShedule();
+           Manager.GroupName = ComboBoxGroups.SelectedItem.ToString();
+           GetGroupShedule();
         }
 
         private void GetTeacherShedule()
@@ -495,12 +487,12 @@ namespace MyKKEP
 
             foreach(KeyValuePair<string, int> keyValue in TeacherId)
             {
-                if (keyValue.Key == Teacher)
+                if (keyValue.Key == Manager.Teacher)
                 {
-                    TeacherUid = keyValue.Value;
+                    Manager.TeacherUid = keyValue.Value;
                 }
             }
-            string responseTeachShedule = Request.TeacherShedule(Token, TeacherUid, WeekSetting);
+            string responseTeachShedule = Request.TeacherShedule(Manager.TeacherUid, Manager.WeekSetting);
             JArray jAnswer = JArray.Parse(responseTeachShedule);
             try
             {
@@ -728,7 +720,7 @@ namespace MyKKEP
         }
         private void ComboBoxTeachers_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            Teacher = ComboBoxTeachers.SelectedItem.ToString();
+            Manager.Teacher = ComboBoxTeachers.SelectedItem.ToString();
             GetTeacherShedule();
             
             sheduleGridMonday.Columns[2].Header = "Группа";
@@ -747,7 +739,7 @@ namespace MyKKEP
             e.Handled = true;
         }
 
-        private void ComboBoxGroups_TextChanged(object sender, TextChangedEventArgs e)
+        /*private void ComboBoxGroups_TextChanged(object sender, TextChangedEventArgs e)
         {
 
             ComboBoxGroups.IsDropDownOpen = true;
@@ -771,6 +763,6 @@ namespace MyKKEP
                 cv.Filter = s => ((string)s).IndexOf(ComboBoxTeachers.Text, StringComparison.CurrentCultureIgnoreCase) >= 0;
             }
 
-        }
+        }*/
     }
 }
